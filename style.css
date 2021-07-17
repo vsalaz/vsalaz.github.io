@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li, a{
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 16px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.nav_links li:hover{
+  background-color: orange;
+  cursor: pointer;
+}

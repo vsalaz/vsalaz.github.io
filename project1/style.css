@@ -1,0 +1,105 @@
+body{
+  height: 100vh;
+  /* display: flex;
+  justify-content: center; */
+}
+header{
+  width: 100%;
+  height: 100px;
+}
+header > img{
+  width: 15%;
+  height: 100%;
+}
+.logo{
+  float: left;
+}
+.logo2{
+  float: right;
+}
+h1{
+  text-align: center;
+}
+.box{
+  width: 90%;
+  height: 45%;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: pink;
+}
+.box > p{
+  color: white;
+  margin-left: 1%;
+  font-size: 16px;
+}
+.sub, .sub4{
+  width: 30%;
+  height: 40%;
+  /* border: 2px solid blue; */
+  box-sizing: border-box;
+  float: left;
+  padding: 0%;
+}
+.sub2, .sub3{
+  width: 60%;
+  height: 40%;
+  /* border: 2px solid red; */
+  box-sizing: border-box;
+  float: left;
+  padding: 4% 3%;
+  overflow: auto;
+  color: white;
+}
+.sub > img{
+  width: 100%;
+  height: 100%;
+}
+.sub4 > img{
+  width: 100%;
+  height: 100%;
+}
+.sub, .sub3{
+  margin-left: 5%;
+}
+figcaption{
+  color: white;
+  font-style: italic;
+}
+table{
+  border: 2px solid black;
+  font-size: 18px;
+}
+.box2{
+  width: 20%;
+  height: 75px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+.p1{
+  margin-left: 70px;
+}
+.contact{
+  width: 65px;
+  float: left;
+}
+.contact > img{
+  width: 100%;
+  height: 100%;
+}
+.link{
+  float: left;
+  padding-top: 23px;
+  margin-left: 20px
+}
+footer{
+  text-align: center;
+  width: 100%;
+}
+.nav_links li{
+  display: inline;
+  padding: 16px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 30px;
+}

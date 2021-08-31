@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+h1{
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+}
+header p{
+  text-align: center;
+  width: 50%;
+  margin: 10px auto;
+}
+.content{
+  width: 50%;
+  margin: 10px auto;
+  background-color: #5EC072;
+  padding: 20px;
+  border-radius: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size:
+}
+.box{
+  width: 70%;
+  margin: auto;
+}
+img{
+  border: 2px solid;
+  width: 100%;
+  height: 100%;
+}
+
+table, th, td {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 2px;
+  margin: auto;
+}
+th{
+  text-align: left;
+  font-size: 20px
+}
+td{
+  font-size: 12px;
+  border-bottom: 1px solid white;
+}
+.right{
+  text-align: right;
+}

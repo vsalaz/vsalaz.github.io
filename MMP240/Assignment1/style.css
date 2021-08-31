@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+h1{
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    width: 30%;
+    padding: 10px;
+    margin: 10px auto;
+}
+.content{
+    font-family: 'Roboto', sans-serif;
+    width: 30%;
+    margin: auto;
+}
+.box{
+    text-align: center;
+   
+}
+.box, img{
+    width: 100%;
+    height: 100%;
+
+}

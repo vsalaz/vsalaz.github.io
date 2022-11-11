@@ -1,0 +1,110 @@
+body {
+    background-image: url(hauntedbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+}
+
+main {
+    max-width: 610px;
+    margin: auto;
+}
+h1{
+    font-family: 'Creepster', cursive;
+    font-size: 4em;
+    letter-spacing: .1em;
+    text-align: center;
+    color: #fb0e0e;
+    text-shadow: 5px 5px 5px black;
+
+}
+
+.win {
+    color: white;
+    background-color: green;
+}
+
+.loss {
+    color: white;
+    background-color: red;
+}
+
+#word {
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 24pt;
+    color: #F8074C;
+    text-shadow: 5px 5px 5px black;
+    font-weight: bold;
+    font-family: 'Boogaloo', cursive;
+}
+
+#guesses {
+    text-align: center;
+    font-size: 16pt;
+    color: #F8074C;
+    font-weight: bold;
+    font-family: 'Boogaloo', cursive;
+}
+
+.guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid #F8074C;
+    margin: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (min-device-width: 375px ) and (max-device-width: 667px) {
+    #guesses {
+    text-align: center;
+    font-size: 24pt;
+    color: #F8074C;
+    font-weight: bold;
+    font-family: 'Boogaloo', cursive;
+}
+
+.guess {
+    padding: 30px;
+    display: inline-block;
+    border: 2px solid #F8074C;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+}
+
+#guessBox {
+    height: 50px;
+    padding-top: 5px;
+    font-size: 18pt;
+    width: 200px;
+    padding-left: 10px;
+    margin-right: 5%;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #480518;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px rgb(17, 17, 17);
+    font-family: 'Boogaloo', cursive;
+}
+
+.button:hover {background-color: #F8074C}
+
+.button:active {
+    background-color: #F8074C;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

@@ -1,0 +1,123 @@
+:root {
+	--cell-size: 100px;
+
+	--color: #81c3fd; /* for hover */
+	--color-set: #204635; /* when set */
+	--l: 10px; /* X line-width */
+}
+body {
+	margin: 0;
+    background-color: #204635;
+    overflow: hidden;
+    width: 100vw;
+	height: 100vh;
+}
+h1{
+    font-size: 6em;
+    text-shadow: black;
+    margin-bottom: 10px;
+}
+h2{
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+h1, h2{
+    text-align: center;
+    font-family: 'Vidaloka', serif;
+    color: #DCB579;
+;
+}
+.board {
+	width: 100vw;
+	height: 50vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto)
+}
+.cell {
+    background-color: white;
+	width: var(--cell-size);
+	height: var(--cell-size);
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+/* remove border for edges */
+.cell:nth-child(1),.cell:nth-child(3), .cell:nth-child(5),.cell:nth-child(7), .cell:nth-child(9) {
+    background-color: black;
+}
+
+/* for cross */
+.board.x .cell:not(.circle):not(.x):hover {
+	background: url("pawn2.png");
+    background-color: white;
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* for cross (set) */
+.cell:not(.circle).x {
+	background: url("pawn2.png");
+    background-color: white;	
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* for circle */
+.board.circle .cell:not(.circle):not(.x):hover {
+	background: url("pawn1.png");
+    background-color: white;	
+    background-size: 80% 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* for circle (set) */
+.cell:not(.x).circle {
+	background: url("pawn1.png");
+    background-color: white;	
+    background-size: 80% 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.winning-message {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--color-set);
+	justify-content: center;
+	align-items: center;
+	color: #DCB579;
+	font-size: 5rem;
+	font-family: 'Vidaloka', serif;
+	flex-direction: column;
+}
+.winning-message button {
+	border-radius: 10px;
+	font-size: 3rem;
+	background-color: white;
+	border: 1px solid var(--color-set);
+	padding: .25em .5em;
+	cursor: pointer;
+    
+}
+
+.winning-message button:hover {
+	background-color: var(--color-set);
+	color: white;
+	border-color: white;
+}
+.winning-message.show {
+	display: flex;
+}
